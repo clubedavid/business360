@@ -8,6 +8,7 @@
 AtliQ's hardware consisted in three different databases:
 
  ***Dimensional tables***
+
   
 **Dim_customer** - A dimensional table containing **"customer"**, **"market"**, **"Platform"**, **"Channel"** and **"customer_code"**.
   
@@ -18,7 +19,9 @@ AtliQ's hardware consisted in three different databases:
   [x] **"Platform"** - AtliQ's Retailer's can be Brick and Mortar or E-commerce, which are the platforms available
   
   [x] **"Channel"** - AtliQ's channels are ***"Direct Channel"*** in which AtliQ's has it's own Stores (AtliQ's Exlusive and AtliQ E Store), ***"Retailer"*** in which AtliQ sends its products to be sold to the final consumer, and ***"Distributor"** channel, in which AtliQ has distributores in countries that do not allow Retail or Direct Sell. 
+  
   [x] **"Customer_code"** A unique code for every customer **"customer"**
+
   
 **Dim_market** - A dimensional table containing **"market"**, **"subzone"** and **"region"**.
 
@@ -33,4 +36,15 @@ AtliQ's hardware consisted in three different databases:
 
 [x] **"Product_code"** - A unique code for every **"product"**
 
-[x] **"Division"** - 
+[x] **"Division"** - The codes for the divisions of AtliQ's Hardware products - e.g Computers, Accessories...
+
+[x] **"Segment"** - The names for each sub-category inside "**division"**
+
+[x] **"Category** - The names for each category of products.
+
+[x] **"Product"** - The names for each product.
+
+[x] **"Variant"** - The variant for each product - States if it's some sort of premium product
+
+
+
