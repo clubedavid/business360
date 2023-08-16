@@ -10,7 +10,7 @@ AtliQ's hardware consisted in three different databases:
  ***Dimensional tables***
 
   
-**Dim_customer** - A dimensional table containing **"customer"**, **"market"**, **"Platform"**, **"Channel"** and **"customer_code"**.
+**Dim_customer** - A dimensional table containing **"customger"**, **"market"**, **"Platform"**, **"Channel"** and **"customer_code"**.
   
   [x] **"customer"** - The names of customers which AtliQ's Serve
   
@@ -46,5 +46,43 @@ AtliQ's hardware consisted in three different databases:
 
 [x] **"Variant"** - The variant for each product - States if it's some sort of premium product
 
+
+ ***COGS tables***
+
+
+**freight_cost** - A table containing **"market"**, **"fiscal_year"**, **"freight_pct"**, and "**other_cost_pct"**
+
+[x] - **"market"** - The names of countries that AtliQ's Serve.
+
+[x] - "**fiscal_year"** - The fiscal year of the **"freight_pct"** and **"other_cost_pct"** attributed to each market.
+
+[x] - **"freigh_pct"** - The % of cost that goes for shipping for each country that AtliQ serves.
+
+[x] - **"other_cost_pct"** - The % of other costs that goes for selling for each country that AtliQ serves.
+
+**manufactoring_cost** - A table containing **"product_code"**, **"cost_year"** and **"manufactoring_cost"**
+
+[x] - **"product_code"** - The product codes found in the ***"dim_product -> product_code"*** table
+
+[x] - **"cost_year"** - The fiscal year of the **"gross_price"** attributed to each market.
+
+[x] - **"manufactoring_cost"** - The cost of manufacturing for each product by the year.
+
+
+
+
+
+
+
+
+
+
+**gross_price** - A table containing **"product_code"**, **"fiscal_year"** and **"gross_price"**
+
+[x] - **"product_code"** - The product codes found in the ***"dim_product -> product_code"*** table
+
+[x] - **"fiscal_year"** - The fiscal year of the **"gross_price"** attributed to each market.
+
+[x] - **"gross_price"** - The price charged by AtliQ's for each product.
 
 
